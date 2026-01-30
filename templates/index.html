@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Criminal - Consultas </title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .card-stats { border-left: 5px solid #0d6efd; }
+        .table-container { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark mb-4">
+    <div class="container">
+        <span class="navbar-brand mb-0 h1">Análise de Veículos Subtraídos 2025</span>
+    </div>
+</nav>
+
+<div class="container">
+    <!-- Cards de Resumo -->
+    <div class="row mb-4">
+        <div class="col-md-4">
+            <div class="card card-stats shadow-sm">
+                <div class="card-body">
+                    <h5 class="text-muted">Total de Roubos</h5>
+                    <h2 class="text-danger">{{ stats.total_roubo }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-stats shadow-sm border-warning">
+                <div class="card-body">
+                    <h5 class="text-muted">Total de Furtos</h5>
+                    <h2 class="text-warning">{{ stats.total_furto }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-stats shadow-sm border-success">
+                <div class="card-body">
+                    <h5 class="text-muted">Cidades Analisadas</h5>
+                    <p class="mb-0 small text-truncate">{{ stats.cidades | join(', ') }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabela de Dados -->
+    <div class="row">
+        <div class="col-12 table-container">
+            <h4 class="mb-3">Últimas Ocorrências (Amostra)</h4>
+            <div class="table-responsive">
+                {{ tabela | safe }}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net"></script>
+</body>
+</html>
+

@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+venv/
+postgres_data/  # IMPORTANTE: não suba os dados do banco
+data/*.xlsx     # Arquivos pesados de dados geralmente ficam fora do Git
+estrutura.txt
+VeiculosSubtraidos_2025.xlsx
