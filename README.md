@@ -2,7 +2,7 @@
 
 **Sentinela** is a data intelligence tool designed to automate criminal analysis and optimize public safety strategic planning.
 
-Originally conceived during my service at the Military Police of São Paulo (PMESP), this project was born from the need to transform raw, manual data from the SSP-SP (Public Safety Secretariat) into actionable insights, replacing slow, manual reporting with an automated ETL and visualization pipeline.
+Originally conceived during my service at the Military Police, this project was born from the need to transform raw, manual data from the SSP-SP (Public Safety Secretariat) into actionable insights, replacing slow, manual reporting with an automated ETL and visualization pipeline.
 
 ---
 
